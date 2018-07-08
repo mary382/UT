@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <test name="PositiveTesting">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="triangle.PositiveDetectionTest"/>
+            <class name="triangle.CheckingSidesTest"/>
+            <class name="triangle.SquareTest"/>
+        </classes>
+    </test>
+    <test name="NegativeTesting">
+        <groups>
+            <run>
+                <exclude name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="triangle.NegativeDetectionTest"/>
+            <class name="triangle.CheckingSidesTest"/>
+            <class name="triangle.SquareTest"/>
+        </classes>
+    </test>
+</suite>
